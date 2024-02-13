@@ -3,13 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Ryzendesu - watch anime without ads and its free!!. powered with consumet API with serverless function">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title id="title">ANIMXER - watch anime</title>
+    <title id="title">Ryzendesu - watch anime</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./-media/fav2.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="./-media/favicon.ico" sizes="any" type="image/ico">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8393088803783733"
+     crossorigin="anonymous"></script>
 </head>
 
+<body>
+    <div id="dim">
+        <div class="history">
+            <div class="historyHead">
+                <h3>Watch History</h3>
+                <button id="closeHistory" onclick="closeHistory()">X</button>
+            </div>
+            <ul class="historyList" id="historyList">
+                History empty
+            </ul>
+
+            <p class="historyDetail">
+                The watch history feature can only save up to 10 lists and it is stored locally, meaning it can only be
+                accessed on the current browser and not on any other device. If you wish to delete the watch history,
+                you can click on <a onclick="clearHistory()">Clear History</a>, but please note that it is a permanent
+                action and cannot be undone.
+            </p>
+        </div>
+    </div>
 
     <div class="container">
 
@@ -99,33 +121,18 @@
         </div>
 
         <div id="footerContainer" style="display: block;">
-            <div class="notif" id="FACEBOOK PAGE">
-                <span>Suportahan ang Website na Ito Sa Pamamagitan ng PAGSUNOD SA AKIN SA FACEBOOK PAGE 
-                    </span>
-                <a href="https://www.facebook.com/profile.php?id=100069572806122" target="_blank" title="Thank You!">FACEBOOK PAGE</a>
+            <div class="notif" id="spanDonate">
+                <span>Dukung website ini dengan cara berdonasi mulai
+                    dari Rp1000!</span>
+                <a href="#" target="_blank" title="Thank you!">FACEBOOK PAGE</a>
             </div>
-                  
-<h2 class="NameFtThanhDieu" align="center">
-    MY OTHER WEBSITES<i class="fa fa-check-circle"></i></h2>
-<h2 class="NameFtThanhDieu" align="center">
-    🇵🇭👇🇵🇭 <i class="fa fa-check-circle"></i></h2>
+
             <footer class="modern-footer">
                 <div class="footer">
-                    <font face="Verdana" size="3">
-   <i>
-    <a href="https://animxer01.github.io/Flix" style="color: #fa0202">MOVIE SITE</a>
-   </i>
-   </font>-
-                    <font face="Verdana" size="3">
-   <i>
-    <a href="https://manga-xer.vercel.app" style="color: #fa0202">MANGA SITE</a>
-   </i>
-   </font> -<a onclick="showHistory()"> History</a>
-                     
-   <i>
-    <a href="https://xernovels.pages.dev" style="color: #fa0202">NOVEL SITE</a>
-   </i>
-   </font>
+                    by <a href="https://www.facebook.com/Nao.Tomori.UwU" target="_blank">ANIMXER</a>-
+                    <a href="https://animxer.xyz">MANGA </a> -
+                    <a onclick="showHistory()"> History</a> - <a
+                        href="https://github.com/ShirokamiRyzen/astream">NOVEL</a>
                 </div>
             </footer>
         </div>
