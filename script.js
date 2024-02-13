@@ -146,39 +146,7 @@ function displayRecent(results) {
         resultContainer.appendChild(resultDiv);
     });
 }
- </div>
-      {animes?.hasNextPage && (
-        <div className="absolute bottom-2 right-5">
-          <button
-            className={`px-2 text-white py-1 text-xs md:text-sm mx-1 rounded-sm ${
-              page === 1 ? "bg-[#fff1]" : "bg-purple-500 hover:scale-105"
-            }`}
-            disabled={page === 1 ? true : false}
-            onClick={() => setPage((prev) => parseInt(prev) - 1)}
-          >
-            Prev
-          </button>
-          <input
-            type="number"
-            className="increment-disabled mx-1 text-center text-white border-[#fff3] border bg-transparent max-w-10 p-1 rounded-md"
-            value={page}
-            onChange={(e) => setPage(e.target.value)}
-          />
-          <button
-            className={`px-2 text-white py-1 text-xs md:text-sm mx-1 rounded-sm ${
-              !animes?.hasNextPage
-                ? "bg-[#fff1]"
-                : "bg-purple-500 hover:scale-105"
-            }`}
-            disabled={!animes?.hasNextPage}
-            onClick={() => setPage((prev) => parseInt(prev) + 1)}
-          >
-            Next
-          </button>
-        </div>
-      )}
-    </div>
-  );
+ 
 };
 // Display Search Result
 function displayResults(results) {
